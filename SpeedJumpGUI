@@ -9,7 +9,7 @@ screenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 
 -- Кнопка увеличения скорости
 increaseSpeedButton.Parent = screenGui
-increaseSpeedButton.Text = "Fast speed"
+increaseSpeedButton.Text = "High speed"
 increaseSpeedButton.Size = UDim2.new(0, 200, 0, 50)
 increaseSpeedButton.Position = UDim2.new(0, 0, 0, 0)
 increaseSpeedButton.FontSize = Enum.FontSize.Size14
@@ -37,8 +37,6 @@ normalJumpButton.Size = UDim2.new(0, 200, 0, 50)
 normalJumpButton.Position = UDim2.new(0, 0, 0, 150)
 normalJumpButton.TextScaled = true -- Автоматически масштабирует текст, чтобы он помещался в кнопку
 
--- Событие нажатия на кнопку
-removeButtonsButton.MouseButton1Click:Connect(removeButtons)
 
 -- Функция для изменения скорости игрока
 local function changeSpeed(player, speed)
