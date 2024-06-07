@@ -13,6 +13,7 @@ increaseSpeedButton.Text = "Fast speed"
 increaseSpeedButton.Size = UDim2.new(0, 200, 0, 50)
 increaseSpeedButton.Position = UDim2.new(0, 0, 0, 0)
 increaseSpeedButton.FontSize = Enum.FontSize.Size14
+increaseJumpButton.TextScaled = true -- Автоматически масштабирует текст, чтобы он помещался в кнопку
 
 -- Кнопка уменьшения скорости
 decreaseSpeedButton.Parent = screenGui
@@ -20,6 +21,7 @@ decreaseSpeedButton.Text = "Normal speed"
 decreaseSpeedButton.Size = UDim2.new(0, 200, 0, 50)
 decreaseSpeedButton.Position = UDim2.new(0, 0, 0, 50)
 decreaseSpeedButton.FontSize = Enum.FontSize.Size14
+increaseJumpButton.TextScaled = true -- Автоматически масштабирует текст, чтобы он помещался в кнопку
 
 -- Кнопка увеличения силы прыжка
 increaseJumpButton.Parent = screenGui
