@@ -1,3 +1,18 @@
+-- Создаем новую кнопку для удаления всех кнопок
+local removeButtonsButton = Instance.new("TextButton")
+removeButtonsButton.Parent = screenGui
+removeButtonsButton.Text = "DELETE BUTTONS"
+removeButtonsButton.Size = UDim2.new(0, 200, 0, 50)
+removeButtonsButton.Position = UDim2.new(0, 0, 0, 200)
+removeButtonsButton.TextScaled = true
+
+-- Функция для удаления кнопок
+local function removeButtons()
+    increaseJumpButton:Destroy()
+    normalJumpButton:Destroy()
+    removeButtonsButton:Destroy()
+end
+
 local screenGui = Instance.new("ScreenGui")
 local increaseSpeedButton = Instance.new("TextButton")
 local decreaseSpeedButton = Instance.new("TextButton")
@@ -36,21 +51,6 @@ normalJumpButton.Text = "Normal jump"
 normalJumpButton.Size = UDim2.new(0, 200, 0, 50)
 normalJumpButton.Position = UDim2.new(0, 0, 0, 150)
 normalJumpButton.TextScaled = true -- Автоматически масштабирует текст, чтобы он помещался в кнопку
-
--- Создаем новую кнопку для удаления всех кнопок
-local removeButtonsButton = Instance.new("TextButton")
-removeButtonsButton.Parent = screenGui
-removeButtonsButton.Text = "DELETE BUTTONS"
-removeButtonsButton.Size = UDim2.new(0, 200, 0, 50)
-removeButtonsButton.Position = UDim2.new(0, 0, 0, 200)
-removeButtonsButton.TextScaled = true
-
--- Функция для удаления кнопок
-local function removeButtons()
-    increaseJumpButton:Destroy()
-    normalJumpButton:Destroy()
-    removeButtonsButton:Destroy()
-end
 
 -- Событие нажатия на кнопку
 removeButtonsButton.MouseButton1Click:Connect(removeButtons)
