@@ -1,18 +1,3 @@
--- Создаем новую кнопку для удаления всех кнопок
-local removeButtonsButton = Instance.new("TextButton")
-removeButtonsButton.Parent = screenGui
-removeButtonsButton.Text = "DELETE BUTTONS"
-removeButtonsButton.Size = UDim2.new(0, 200, 0, 50)
-removeButtonsButton.Position = UDim2.new(0, 0, 0, 200)
-removeButtonsButton.TextScaled = true
-
--- Функция для удаления кнопок
-local function removeButtons()
-    increaseJumpButton:Destroy()
-    normalJumpButton:Destroy()
-    removeButtonsButton:Destroy()
-end
-
 local screenGui = Instance.new("ScreenGui")
 local increaseSpeedButton = Instance.new("TextButton")
 local decreaseSpeedButton = Instance.new("TextButton")
